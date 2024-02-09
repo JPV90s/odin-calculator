@@ -5,47 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="result-screen">
             <div class="preview">
-                <p><span id="preview">25698 - 2564</span></p>
+                <p><span id="preview"></span></p>
             </div>
             <div class="result">
-                <p><span id="result">123.546,58</span></p>
+                <p><span id="result">0</span></p>
             </div>
         </div>
         <div class="buttons-screen">
             <div class="first-row">
-                <button class="button operator" type="button">C</button>
+                <button class="button" type="button" value="clear" id="clear">C</button>
                 <button class="button operator" type="button">+/-</button>
-                <button class="button operator" type="button">%</button>
+                <button class="button operator" type="button" value="%">%</button>
                 <button class="button operator" type="button" value="/">÷</button>
             </div>
             <div class="second-row">
-                <button class="button" type="button" value="7">7</button>
-                <button class="button" type="button" value="8">8</button>
-                <button class="button" type="button" value="9">9</button>
+                <button class="button number" type="button" value="7">7</button>
+                <button class="button number" type="button" value="8">8</button>
+                <button class="button number" type="button" value="9">9</button>
                 <button class="button operator" type="button" value="*">x</button>
             </div>
             <div class="third-row">
-                <button class="button" type="button" value="4">4</button>
-                <button class="button" type="button" value="5">5</button>
-                <button class="button" type="button" value="6">6</button>
+                <button class="button number" type="button" value="4">4</button>
+                <button class="button number" type="button" value="5">5</button>
+                <button class="button number" type="button" value="6">6</button>
                 <button class="button operator" type="button" value="-">-</button>
             </div>
             <div class="fourth-row">
-                <button class="button" type="button" value="1">1</button>
-                <button class="button" type="button" value="2">2</button>
-                <button class="button" type="button" value="3">3</button>
+                <button class="button number" type="button" value="1">1</button>
+                <button class="button number" type="button" value="2">2</button>
+                <button class="button number" type="button" value="3">3</button>
                 <button class="button operator" type="button" value="+">+</button>
             </div>
             <div class="fifth-row">
-                <button class="button" type="button" value="0" id="zero">0</button>
-                <button class="button" type="button" value=".">.</button>
-                <button class="button operator" type="button" value="=">=</button>
+                <button class="button number" type="button" value="0" id="zero">0</button>
+                <button class="button number" type="button" value=".">.</button>
+                <button class="button operator" type="button" value="=" id="equal">=</button>
+                <button class="button" type="button" id="onOff">OFF / ON</button>
             </div>
         </div>
     </div>
